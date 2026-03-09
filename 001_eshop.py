@@ -46,20 +46,15 @@ z2 = Zakaznik("Maty")
 
 flashdisk = Produkt("Flash disk 128 GB",100,1,1)
 mouka = Produkt("All purpose flour",200,1,"kg")
-ledviny = Produkt("Pouze po párech - ledviny",5,1,"g")
+meloun = Produkt("Meloun",5,1,"kg")
 
 z1.kosik.pridej(mouka,2)
-z1.kosik.pridej(ledviny,6)
-
-
+z1.kosik.pridej(meloun,6)
 
 z1._login = "Hacker"
-
-
-
-
 
 print(f"Toto je kosik zakaznika {z1._login} , : {z1.kosik.polozky}")
 print(flashdisk,mouka)
 
 print(z1.kosik.vypis_obsah())
+
